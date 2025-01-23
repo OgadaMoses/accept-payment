@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div th:fragment="menu">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <a th:href="@{/home}"><i class="fa fa-home"></i> Home</a>
+            <a th:href="@{/my-account}"><i class="fa fa-user"></i> My Account</a>
+            <a th:href="@{/users}"><i class="fa fa-users"></i> Users</a>
+            <a th:href="@{/reports}"><i class="fa fa-chart-line"></i> Reports</a>
+            <a th:href="@{/settings}"><i class="fa fa-cogs"></i> Settings</a>
+            <a th:href="@{/about}"><i class="fa fa-info-circle"></i> About</a>
+        </div>
+    </div>
+</body>
+</html>
